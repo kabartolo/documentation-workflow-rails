@@ -1,0 +1,32 @@
+name: Linting
+on: [pull_request]
+
+jobs:
+  prose:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@master
+
+    - name: Run Vale
+      uses: errata-ai/vale-action@master
+      with:
+        # Optional
+        styles: |
+          https://github.com/errata-ai/Microsoft/releases/latest/download/Microsoft.zip
+          https://github.com/errata-ai/write-good/releases/latest/download/write-good.zip
+        files: __onlyModified
+        # Optional
+        config: https://raw.githubusercontent.com/errata-ai/vale/master/.vale.ini
+      env:
+        # Required
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@master
+
+    - name: Run markdownlint
+      uses: actionshub/markdownlint@main
