@@ -1,0 +1,32 @@
+<!-- Set the pull request title: [Create or Update] [Feature Name] Docs: #[issue number] -->
+
+Fixes #[issue number]
+
+## Description
+
+<!-- Briefly describe what this pull request (PR) does and what it changes. -->
+
+## Author checklist
+
+- [ ] Follow the official style guide:
+  - [ ] Use title case for all headings.
+  - [ ] Use boldface only for button text (e.g., `Click **Submit**`).
+  - [ ] Use the imperative and second-person in instructions (e.g., "Start the development server. You will see a blank screen.").
+- [ ] Assign a reviewer.
+
+## Maintainer checklist
+
+If you have the correct permissions:
+
+- [ ] Add the `documentation` label to this PR.
+- [ ] Under **Projects**, select the **Docs Board** project.
+- [ ] Add the `docs::in review` label to the related issue.
+- [ ] Remove the `docs::in progress` label from the related issue.
+
+## Reviewer checklist
+- [ ] In the **Docs Board** project: Move the PR to the **PRs: Review in progress** column from triage.
+- [ ] Check that the content follows the style guide.
+- [ ] Check spelling, grammar, clarity, and consistency.
+- [ ] Check accuracy and syntax of code samples.
+- [ ] User-test any instructions.
+- [ ] Review changes made by other reviewers.
