@@ -9,7 +9,7 @@ Fixes #[issue number]
 ## Author checklist
 
 - [ ] Follow the official style guide:
-  - [ ] Use title case for all headings.
+  - [ ] Use sentence case for all headings.
   - [ ] Use boldface only for button text (e.g., `Click **Submit**`).
   - [ ] Use the imperative and second-person in instructions (e.g., "Start the development server. You will see a blank screen.").
 - [ ] Assign a reviewer.
