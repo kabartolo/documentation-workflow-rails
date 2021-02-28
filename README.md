@@ -6,10 +6,10 @@ The docs site is currently hosted as a [Netlify app](https://sharp-williams-b468
 
 To use this workflow, copy these files into your own project and customize them as needed:
 
-* `.mldrc`` and .mld.rb`: These contain rules for the [`markdownlint` action](https://github.com/markdownlint/markdownlint).
-* `.vale.ini`: This file sets the styles use by the [Vale action](https://github.com/errata-ai/vale-action).
-* `.github/styles/vocab.txt`: This file contains a list of words for Vale to ignore (e.g., your company name).
-* `.github/workflows/main.yml`: This is the workflow file that manages the Vale and `markdownlint` actions and runs their checks in every pull request.
+* `.mldrc`` and .mld.rb`: Rules for the [`markdownlint` action](https://github.com/markdownlint/markdownlint).
+* `.vale.ini`: Styles used by the [Vale action](https://github.com/errata-ai/vale-action).
+* `.github/styles/vocab.txt`: A list of words for Vale to ignore (e.g., your company name).
+* `.github/workflows/docs.yml`: Workflow that configures and runs the Vale and `markdownlint` actions on Markdown files.
 * `.github/PULL_REQUEST_TEMPLATE`: Sample pull request template with checklists for authors, reviewers, and maintainers. This is intended for docs-only repositories.
 
 In addition, set up the following tools:
